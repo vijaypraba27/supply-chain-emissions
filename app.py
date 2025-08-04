@@ -31,8 +31,8 @@ def preprocess_input(df):
     return df
 
 # --------------------- Load Model & Scaler ---------------------
-model = joblib.load(r'C:\Users\T M\Desktop\LR_model.pkl')
-scaler = joblib.load(r'C:\Users\T M\Desktop\scaler.pkl')
+model = joblib.dump('LR_model.pkl')
+scaler = joblib.dump('scaler.pkl')
 
 # --------------------- App Title & Description ---------------------
 st.markdown("<h2 style='color:#0066cc;'>🌍 Supply Chain Emissions Prediction</h2>", unsafe_allow_html=True)
